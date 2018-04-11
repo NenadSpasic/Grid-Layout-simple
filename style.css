@@ -1,0 +1,97 @@
+.all{
+    width: 1000px;
+    margin: 30px auto;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: 150px;
+    grid-gap: 30px;
+
+    /* Mnogo dobra fora...iskoristi je
+    align-items: center;
+    justify-items: center;
+    */
+
+
+}     
+
+.header_text{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration-line: overline;
+   
+}
+.small-box-1_text,
+.small-box-2_text,
+.small-box-3_text
+{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration-line: line-through;
+   
+}
+
+.footer_text{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration-line: underline;
+}
+
+.main-content_text{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration-line: initial;
+}
+
+.sidebar_text{
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration-line: initial;
+}
+
+.header, 
+.small-box-1, 
+.small-box-2, 
+.small-box-3,
+.main-content,
+.sidebar,
+.footer{
+    display: grid;
+    align-content: center;
+    justify-content: center;background-color: orangered;
+    padding: 20px;
+    color: white;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.header{
+    grid-column: 1 / -1;
+}
+
+.footer{
+    grid-column: 1 / -1;
+ 
+}
+
+.sidebar{
+    grid-column: 4 / 5;
+    grid-row: 2 / span 3;
+}
+
+.main-content{
+    grid-column: 1 / span 3;
+    grid-row: 3 / 5;
+}
+
+.small-box-1, 
+.small-box-2, 
+.small-box-3,
+{
+    grid-column: 1fr 1fr 1fr;
+}
